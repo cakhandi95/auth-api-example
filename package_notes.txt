@@ -1,0 +1,9 @@
+Berikut penjelasan dari fungsi masing-masing runner script:
+
+
+start → Menjalankan aplikasi tahap production.
+start:dev → Menjalankan aplikasi tahap development menggunakan nodemon.
+test → Menjalankan pengujian di sisi production. Runner ini akan kita gunakan nanti ketika deployment.
+test:watch → Menjalankan pengujian setiap kali ada perubahan berkas. Runner digunakan saat development untuk memastikan setiap kode yang ditulis lolos pengujian. Di sana Anda juga akan melihat tambahan parameter --setupFiles yang diberi nilai dotenv/config. Itu berarti Jest akan menggunakan dotenv setiap kali pengujian dijalankan.
+migrate → Menjalankan migration pada database yang digunakan oleh aplikasi.
+migrate:test → Menjalankan migration pada database yang digunakan untuk proses pengujian.
